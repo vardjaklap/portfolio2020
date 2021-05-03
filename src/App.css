@@ -1,38 +1,171 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Roboto', sans-serif;
+  transition: 0.3s all ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.overlayHeader{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(39, 46, 59, 0.65);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#navigation{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 40px 5px 25px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  z-index: 100;
+  margin: 0;
+}
+#navigation a:hover{
+  text-decoration: none;
+}
+#navigation a{
+  text-decoration: none;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.unScrolledA,.unScrolledA:hover{
+  color: #373737;
+}
+.scrolledA,.scrolledA:hover{
+  color: #373737;
+}
+.unScrolledUl{
+  padding: 4vh 20%;
+}
+.scrolledUl{
+  padding: 2vh 20%;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.hamb i{
+  display: none;
+}
+.scrollUp{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #3d4451;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  line-height: 45px;
+  text-align: center;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.21);
+}
+.scrollUp:hover{
+  background-color: #fff;
+}
+.scrollUp i{
+  color: #3d4451;
+  z-index: 10;
+}
+.noDisplay{
+  z-index: 10;
+  opacity: 0;
+}
+.lineNav{
+  height: 3px;
+  width: 0%;
+  margin-top: 3px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.butNav:hover .lineNav{
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.section{
+  margin: 15vh 0;
+}
+#mainContent{
+  padding: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#avatarImg{
+  min-height: 350px;
+  width: 100%;
+}
+
+#avatarImg{
+  background-image: url("img/avatar.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+
+.mainCont{
+  background-color: darkgrey;
+  height: 100%;
+  width: 100%;
+}
+.divider{
+  height: 1px;
+  width: 100%;
+  background-color: #c7c7c7;
+  margin: 25px 0;
+}
+.mainKey{
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 0;
+}
+.mainValue{
+  font-size: 1rem;
+  margin-top: 0;
+  color: #a0a0a0;
+}
+.boxContainer{
+  height: 100px;
+  /*width: 100%;*/
+}
+
+.downloadResume{
+  height: 60px;
+  width: 250px;
+  color: #3d4451;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px #cbcdcf solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+
+.cardTop{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+}
+
+#usbOne{
+  width: 121px;
+  height: 501px;
+  position: relative;
+  top: 600px;
+  left: 0;
+  background-image: url("img/dec1.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+#usbTwo{
+  width: 111px;
+  height: 501px;
+  position: relative;
+  top: 700px;
+  right: 0;
+  float: right;
+  background-image: url("img/dec2.png");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
 }
