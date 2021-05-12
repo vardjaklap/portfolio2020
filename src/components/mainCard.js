@@ -22,7 +22,7 @@ export class MainCard extends Component {
         };
     }
     handleClick(){
-        window.open('https://drive.google.com/open?id=1TXHl6Tzpd0g1ngH7YF3A-P_ntATYMEXy')
+        window.open('https://drive.google.com/file/d/1_FdecBOart6qKJl978SQWjm3KDew9kws')
     }
     componentDidMount() {
         this.interval = setInterval(() => {
